@@ -1,0 +1,21 @@
+.Pokecard {
+    height: 300px;
+    width: 200px;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Pokecard-img {
+    height: 150px;
+    width: 150px;
+}
+
+.Pokecard-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
