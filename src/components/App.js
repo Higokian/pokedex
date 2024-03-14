@@ -1,3 +1,5 @@
+// Render single pokedex
+
 import '../css/App.css';
 
 function App() {
