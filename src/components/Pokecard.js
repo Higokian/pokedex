@@ -12,12 +12,16 @@ const POKE_API =
 class Pokecard extends Component {
     render() { 
         let imgSrc = `${POKE_API}${this.props.id}.png`
+        let type = this.props.type;
+
         return (
             <div className="Pokecard">
-                <h2 className="Pokecard-name">{this.props.name}</h2>
+                <div className={`Pokecard-banner bg-${type}`}>
+                    <h2 className="Pokecard-name">{this.props.name}</h2>
+                </div>
                 <img className="Pokecard-img" src={imgSrc} />
                 <div className="Pokecard-info">
-                    <p>Type: {this.props.type}</p>
+                    <p className={`${type}`}>Type: <strong>{type}</strong></p>
                     <p>EXP: {this.props.exp}</p>
                 </div>
             </div>

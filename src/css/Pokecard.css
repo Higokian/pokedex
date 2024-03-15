@@ -1,7 +1,7 @@
 .Pokecard {
     
     width: 250px;
-    background-color: blanchedalmond;
+    background-color: rgba(255, 255, 255, 0.87);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -12,9 +12,75 @@
     flex-wrap: wrap;
 }
 
-
+.Pokecard-banner {
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+}
 .Pokecard-info {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    font-size: 20px;
 }
+
+/* Type colors */
+
+.normal {
+    color: #ACAD99
+}
+
+.fire {
+    color: #E87A3D
+}
+
+.flying {
+    color: #90AAD7
+}
+
+.water {
+    color: #639CE4
+}
+
+.bug {
+    color: #ACC23E
+}
+
+.electric {
+    color: #E7C536
+}
+
+.poison {
+    color: #B369AF	
+}
+
+/* Type Background Colors */
+.bg-normal {
+    background-color: #ACAD99
+}
+
+.bg-fire {
+    background-color: #E87A3D
+}
+
+.bg-flying {
+    background-color: #90AAD7
+}
+
+.bg-water {
+    background-color: #639CE4
+}
+
+.bg-bug {
+    background-color: #ACC23E
+}
+
+.bg-electric {
+    background-color: #E7C536
+}
+
+.bg-poison {
+    background-color: #B369AF	
+}
+
+
