@@ -1,21 +1,20 @@
 .Pokecard {
-    height: 300px;
-    width: 300px;
+    
+    width: 250px;
     background-color: blanchedalmond;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    padding: 10px;
+    margin: 1rem;
+    flex-wrap: wrap;
 }
 
-.Pokecard-img {
-    height: 150px;
-    width: 150px;
-}
 
 .Pokecard-info {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: space-evenly;
 }
