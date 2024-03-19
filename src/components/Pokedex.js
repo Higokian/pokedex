@@ -19,6 +19,8 @@ class Pokedex extends Component {
         ]
     }
     render() {
+        
+        
         return (
             <div className="Pokedex">
                 <div className="Pokedex-row">
@@ -27,6 +29,7 @@ class Pokedex extends Component {
                     ))}
                 </div>
             </div>
+            
         );
     };
 };
