@@ -22,36 +22,47 @@
     flex-direction: column;
     justify-content: space-evenly;
     font-size: 20px;
+    text-align: center;
+    
 }
+
+
 
 /* Type colors */
 
 .normal {
-    color: #ACAD99
+    background-color: #ACAD99;
+    border-radius: 5px;
 }
 
 .fire {
-    color: #E87A3D
+    background-color: #E87A3D;
+    border-radius: 5px;
 }
 
 .flying {
-    color: #90AAD7
+    background-color: #90AAD7;
+    border-radius: 5px;
 }
 
 .water {
-    color: #639CE4
+    background-color: #639CE4;
+    border-radius: 5px;
 }
 
 .bug {
-    color: #ACC23E
+    background-color: #ACC23E;
+    border-radius: 5px;
 }
 
 .electric {
-    color: #E7C536
+    background-color: #E7C536;
+    border-radius: 5px;
 }
 
 .poison {
-    color: #B369AF	
+    background-color: #B369AF;
+    border-radius: 5px;	
 }
 
 /* Type Background Colors */
