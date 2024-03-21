@@ -21,21 +21,12 @@ class Pokedex extends Component {
 
     render() {
         
-        function shuffleCards(arr) {
-            for (let i = arr.length - 1; i > 0; i--) {
-                // Create random index between 0 and i
-                let randomCard = Math.floor(Math.random() * (i + 1));
-
-                // Swap random cards
-                [arr[i], arr[randomCard]] = [arr[randomCard], arr[i]];
-            }
-            return arr;
-        }
         
         return (
             <div className="Pokedex">
+                <p>Total exp: {this.props.exp}</p>
                 <div className="Pokedex-row">
-                    {shuffleCards(this.props.pokemon).map((p) => (
+                    {this.props.pokemon.map((p) => (
                         <Pokecard id={p.id} name={p.name} type={p.type} exp={p.base_experience} />
                     ))}
                 </div>
