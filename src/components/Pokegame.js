@@ -18,8 +18,6 @@ class Pokegame extends Component {
     }
     render() {
 
-        const pokedex = shuffle(this.props.pokemon);
-
         // Knuth shuffle algorithm
         function shuffle(arr) {
             for (let i = arr.length - 1; i > 0; i--) {
@@ -32,20 +30,23 @@ class Pokegame extends Component {
             return arr;
         }
 
+        // Shuffle all 8 cards
+        const pokedex = shuffle(this.props.pokemon);
+
+        // Split deck into 2 hands
         const halfwayIndex = Math.ceil(pokedex.length / 2);
         const hand1 = pokedex.slice(0, halfwayIndex);
         const hand2 = pokedex.slice(halfwayIndex);
-        console.log(hand1)
-        console.log(hand2)
 
-
+        // Calculate each hand's total exp
         let exp1 = hand1.reduce((exp, pokemon) => exp + pokemon.base_experience, 0);
         let exp2 = hand2.reduce((exp, pokemon) => exp + pokemon.base_experience, 0);
+
     
         return (
             <div>
-                <Pokedex pokemon={hand1} exp={exp1} player="Player 1"/>
-                <Pokedex pokemon={hand2} exp={exp2} player="Player 2"/>
+                <Pokedex pokemon={hand1} exp={exp1} player="Player 1" isWinner={exp1 > exp2}/>
+                <Pokedex pokemon={hand2} exp={exp2} player="Player 2" isWinner={exp2 > exp1}/>
             </div>
         )
     }
