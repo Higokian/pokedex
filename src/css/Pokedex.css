@@ -21,7 +21,27 @@
 }
 
 .Pokedex-exp {
-    color: white;
-    text-align: center;
     font-size: 30px;
+}
+
+.Pokedex-winner {
+    color: rgb(75, 209, 75);
+    font-size: 40px;
+    
+}
+
+.Pokedex-loser {
+    color: rgb(199, 59, 59);
+    font-size: 40px;
+    
+}
+
+.Pokedex-w-border {
+    background-color:rgba(5, 51, 5, 0.568);
+    border-radius: 10px 10px 0px 0px ;
+}
+
+.Pokedex-l-border {
+    background-color:rgba(48, 5, 5, 0.623);
+    border-radius: 10px 10px 0px 0px ;
 }
