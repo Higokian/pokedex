@@ -19,7 +19,7 @@ class Pokegame extends Component {
     render() {
 
         // Knuth shuffle algorithm
-        function shuffle(arr) {
+        const shuffle = (arr) => {
             for (let i = arr.length - 1; i > 0; i--) {
                 // Select random card between 0 and i
                 let randomCard = Math.floor(Math.random() * (i + 1));
